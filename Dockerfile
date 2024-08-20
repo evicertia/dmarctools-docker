@@ -28,7 +28,6 @@ COPY config/parsedmarc.sample.ini /srv/parsedmarc/config/
 
 COPY config/kibanaDashboard.ndjson /data/
 COPY config/kibanaDashboard-v2.ndjson /data/
-COPY README /data/
 
 # Create symbolic link
 RUN ln -s /srv/parsedmarc/config/GeoLite2-Country.mmdb /usr/share/GeoIP/GeoLite2-Country.mmdb
